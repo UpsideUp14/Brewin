@@ -1,4 +1,4 @@
-# Introcourse Project App for the iPraktikum
+# Introcourse Project App for the iPraktikum - Inosensius Alvian
 
 To pass the introcourse, you need to create your own unique iOS app (based on SwiftUI).
 
