@@ -30,7 +30,7 @@ As a coffee lover, I find it difficult to keep track of my recipes and my settin
 
 The app itself should be able to keep track of recipes of different brewing methods that I use, Keep track of beans that I brew. I also need to be able to add specific details for each combination of recipe and beans, details such as, grind size, and temprature. The app should also have a built in stopwatch/timer and hints for each recipe steps.
 
-I should also be able to filter beans or recipes by types, and also mark any recipes, beans, or the combination as favorites. Brews should also be logged and can be editted and deleted.
+I should alaso be able to filter beans or recipes by types, and also mark any recipes, beans, or the combination as favorites. Brews should also be logged and can be editted and deleted. Notes should be able to be added to any specific instance of a log
 
 ## Requirements
 
@@ -44,23 +44,14 @@ I should also be able to filter beans or recipes by types, and also mark any rec
     Users should be able to combine any recipe with any beans available. And they should be able to add details such as: grind size, water temprature 
     
 - Log brews of a specific combination of recipe and beans 
-    The app should log everytime the user decides to brew. The data that is log are: creationdate, recipe, beans type, brew time, grind size
+    The app should log everytime the user decides to brew. The data that is log are: recipe, beans type, brew time, grind size
     
 - Add notes to each log
     The user should be able to optionally add notes to brew logs. 
     
-- Start stopwatch
-    The user should be able to start a stopwatch to time the brews
-    
-- Filter recipe and beans
-    user can filter recipes and beans based on typed
-    
-- Mark favorites 
-    user can mark their favorite beans and recipes
-    
 ## Analysis
 
-<img src = "./Analysis.png">
+TODO: Include an analysis object model. You can use [draw.io](https://draw.io) or [apollon](https://apollon.ase.cit.tum.de) to create it.
 
 ## System Design
 
@@ -68,12 +59,5 @@ TODO: Include a system design overview describing your application.
 
 ## Product Backlog
 
-BREWIN 1 - Add recipes & beans
-BREWIN 2 - View recipes & beans
-BREWIN 3 - Edit recipes & beans
-BREWIN 4 - Start and stop stopwatch
-BREWIN 5 - Add grind size and temprature to a recipe and bean combination
-BREWIN 6 - Start brewing and log them
-BREWIN 7 - View and edit logs
-BREWIN 7 - Filter recipes & beans
-BREWIN 8 - Mark favorite recipes & beans
+TODO: Add a product backlog and don't forget to update it with each PR
+
