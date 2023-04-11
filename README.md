@@ -25,11 +25,21 @@ Until the deadline all of your PRs **need to be merged** and your final app **ne
 
 ## Problem Statement (max. 500 words)
 
-TODO: Add your problem statement here. In case you do not remember take a look at the EIST slides again ;)
+    As a coffee lover, I find it difficult to keep track of my recipes and my settings. So rather than writting everything on post it notes and sticking them all over my room, 
+I would love an app that can keep track of all my notes. 
+
+The app itself should be able to keep track of recipes of different brewing methods that I use, Keep track of beans that I brew. I also need to be able to add specific details for each combination of recipe and beans, details such as, grind size, and temprature. The app should also have a built in stopwatch/timer and hints for each recipe steps.
 
 ## Requirements
 
-TODO: Document the requirements you fulfilled with your app. Discuss them with your tutor.
+- Add recipe entries
+    The user should be able to add recipe entries for specific brewing method with timing and description infos
+
+- Add beans entries 
+    Users should be able to add entries of beans with details such as: bean name, origin, process, height, and tasting notes.
+    
+- Combine recipe and beans
+    Users should be able to combine any recipe with any beans available. And they should be able to add details such as: grind size, water temprature 
 
 ## Analysis
 
