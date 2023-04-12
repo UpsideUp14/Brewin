@@ -56,9 +56,8 @@ I should also be able to filter beans or recipes by types, and also mark any rec
     user can mark their favorite beans and recipes
     
 
-
 ## Analysis
-<img src = "./analysis.png">
+<img src = "./Analysis.png">
 
 
 ## System Design
