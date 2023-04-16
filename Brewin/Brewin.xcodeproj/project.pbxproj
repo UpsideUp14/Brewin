@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B10118D29E8431B00B90276 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10118C29E8431B00B90276 /* Instruction.swift */; };
+		2B10119429E8601A00B90276 /* InstructionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10119329E8601A00B90276 /* InstructionList.swift */; };
+		2B10119629E8666800B90276 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10119529E8666800B90276 /* StopwatchView.swift */; };
+		2B1846A229E7DC27003D892F /* BeansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A129E7DC27003D892F /* BeansViewModel.swift */; };
+		2B1846A429E7DC45003D892F /* Bean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A329E7DC45003D892F /* Bean.swift */; };
+		2B598ED029E6FD5100072B52 /* BrewinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B598ECF29E6FD5100072B52 /* BrewinApp.swift */; };
+		2B598ED429E6FD5200072B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B598ED329E6FD5200072B52 /* Assets.xcassets */; };
+		2B598ED729E6FD5200072B52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B598ED629E6FD5200072B52 /* Preview Assets.xcassets */; };
+		2B598EEB29E6FD5200072B52 /* BrewinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B598EEA29E6FD5200072B52 /* BrewinUITests.swift */; };
+		2B598EED29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B598EEC29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift */; };
+		2B66F00029EA8AAF00BC9B5E /* BrewinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66EFFF29EA8AAF00BC9B5E /* BrewinView.swift */; };
+		2B66F00229EA8ADC00BC9B5E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66F00129EA8ADC00BC9B5E /* MainView.swift */; };
+		2B66F00429EA9B5100BC9B5E /* EditRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66F00329EA9B5100BC9B5E /* EditRecipe.swift */; };
+		2B6BB15A29EAD6D0004CEBB1 /* EditBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6BB15929EAD6D0004CEBB1 /* EditBean.swift */; };
+		2B82748C29EAF0200020A565 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82748B29EAF0200020A565 /* Log.swift */; };
+		2B82748E29EAF0310020A565 /* LogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82748D29EAF0310020A565 /* LogViewModel.swift */; };
+		2B82749029EAF03E0020A565 /* LogOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82748F29EAF03E0020A565 /* LogOverview.swift */; };
+		2B82749229EB014B0020A565 /* SaveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82749129EB014B0020A565 /* SaveLogView.swift */; };
+		2B90F54329EC21A5008C7760 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F54229EC21A5008C7760 /* Test.swift */; };
+		2B90F54929EC24F1008C7760 /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = 2B90F54829EC24F1008C7760 /* TabBar */; };
+		2B90F54C29EC26EF008C7760 /* CustomTabItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F54B29EC26EF008C7760 /* CustomTabItemStyle.swift */; };
+		2B90F54E29EC2713008C7760 /* CustomTabBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F54D29EC2713008C7760 /* CustomTabBarStyle.swift */; };
+		2BB1ABC629E7D02B003C6ED7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1ABC529E7D02B003C6ED7 /* Recipe.swift */; };
+		2BB1ABC829E7D282003C6ED7 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1ABC729E7D282003C6ED7 /* RecipeViewModel.swift */; };
+		2BFC68E329E95A5A001318F2 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E229E95A5A001318F2 /* Stopwatch.swift */; };
+		2BFC68E529E97693001318F2 /* RecipeOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E429E97693001318F2 /* RecipeOverview.swift */; };
+		2BFC68E729E976A7001318F2 /* BeansOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E629E976A7001318F2 /* BeansOverview.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B598EDD29E6FD5200072B52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B598EC429E6FD5100072B52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B598ECB29E6FD5100072B52;
+			remoteInfo = Brewin;
+		};
+		2B598EE729E6FD5200072B52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B598EC429E6FD5100072B52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B598ECB29E6FD5100072B52;
+			remoteInfo = Brewin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B10118C29E8431B00B90276 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		2B10119329E8601A00B90276 /* InstructionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionList.swift; sourceTree = "<group>"; };
+		2B10119529E8666800B90276 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
+		2B1846A129E7DC27003D892F /* BeansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeansViewModel.swift; sourceTree = "<group>"; };
+		2B1846A329E7DC45003D892F /* Bean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bean.swift; sourceTree = "<group>"; };
+		2B598ECC29E6FD5100072B52 /* Brewin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B598ECF29E6FD5100072B52 /* BrewinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewinApp.swift; sourceTree = "<group>"; };
+		2B598ED329E6FD5200072B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B598ED629E6FD5200072B52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B598EDC29E6FD5200072B52 /* BrewinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B598EE629E6FD5200072B52 /* BrewinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B598EEA29E6FD5200072B52 /* BrewinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewinUITests.swift; sourceTree = "<group>"; };
+		2B598EEC29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B66EFFF29EA8AAF00BC9B5E /* BrewinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewinView.swift; sourceTree = "<group>"; };
+		2B66F00129EA8ADC00BC9B5E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2B66F00329EA9B5100BC9B5E /* EditRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipe.swift; sourceTree = "<group>"; };
+		2B6BB15929EAD6D0004CEBB1 /* EditBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBean.swift; sourceTree = "<group>"; };
+		2B82748B29EAF0200020A565 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		2B82748D29EAF0310020A565 /* LogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewModel.swift; sourceTree = "<group>"; };
+		2B82748F29EAF03E0020A565 /* LogOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOverview.swift; sourceTree = "<group>"; };
+		2B82749129EB014B0020A565 /* SaveLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLogView.swift; sourceTree = "<group>"; };
+		2B90F54229EC21A5008C7760 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		2B90F54B29EC26EF008C7760 /* CustomTabItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItemStyle.swift; sourceTree = "<group>"; };
+		2B90F54D29EC2713008C7760 /* CustomTabBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarStyle.swift; sourceTree = "<group>"; };
+		2BB1ABC529E7D02B003C6ED7 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		2BB1ABC729E7D282003C6ED7 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		2BFC68E229E95A5A001318F2 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		2BFC68E429E97693001318F2 /* RecipeOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverview.swift; sourceTree = "<group>"; };
+		2BFC68E629E976A7001318F2 /* BeansOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeansOverview.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B598EC929E6FD5100072B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B90F54929EC24F1008C7760 /* TabBar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B598ED929E6FD5200072B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B598EE329E6FD5200072B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B598EC329E6FD5100072B52 = {
+			isa = PBXGroup;
+			children = (
+				2B598ECE29E6FD5100072B52 /* Brewin */,
+				2B598EDF29E6FD5200072B52 /* BrewinTests */,
+				2B598EE929E6FD5200072B52 /* BrewinUITests */,
+				2B598ECD29E6FD5100072B52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B598ECD29E6FD5100072B52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B598ECC29E6FD5100072B52 /* Brewin.app */,
+				2B598EDC29E6FD5200072B52 /* BrewinTests.xctest */,
+				2B598EE629E6FD5200072B52 /* BrewinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B598ECE29E6FD5100072B52 /* Brewin */ = {
+			isa = PBXGroup;
+			children = (
+				2B598ECF29E6FD5100072B52 /* BrewinApp.swift */,
+				2B66F00129EA8ADC00BC9B5E /* MainView.swift */,
+				2B598ED329E6FD5200072B52 /* Assets.xcassets */,
+				2B90F54A29EC26C3008C7760 /* Custom TabBar */,
+				2BB1ABC329E7CA1C003C6ED7 /* Brewing Subsystem */,
+				2BB1ABC429E7CA75003C6ED7 /* Recipe Subsystem */,
+				2BB1ABC929E7D45E003C6ED7 /* Beans Subsystem */,
+				2B82748A29EAEFE70020A565 /* Logging Subsystem */,
+				2B598ED529E6FD5200072B52 /* Preview Content */,
+				2B90F54229EC21A5008C7760 /* Test.swift */,
+			);
+			path = Brewin;
+			sourceTree = "<group>";
+		};
+		2B598ED529E6FD5200072B52 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B598ED629E6FD5200072B52 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B598EDF29E6FD5200072B52 /* BrewinTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BrewinTests;
+			sourceTree = "<group>";
+		};
+		2B598EE929E6FD5200072B52 /* BrewinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B598EEA29E6FD5200072B52 /* BrewinUITests.swift */,
+				2B598EEC29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift */,
+			);
+			path = BrewinUITests;
+			sourceTree = "<group>";
+		};
+		2B66F00529EAA0F700BC9B5E /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				2B10118C29E8431B00B90276 /* Instruction.swift */,
+				2B10119329E8601A00B90276 /* InstructionList.swift */,
+			);
+			path = Instructions;
+			sourceTree = "<group>";
+		};
+		2B82748A29EAEFE70020A565 /* Logging Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				2B82748B29EAF0200020A565 /* Log.swift */,
+				2B82748D29EAF0310020A565 /* LogViewModel.swift */,
+				2B82748F29EAF03E0020A565 /* LogOverview.swift */,
+				2B82749129EB014B0020A565 /* SaveLogView.swift */,
+			);
+			path = "Logging Subsystem";
+			sourceTree = "<group>";
+		};
+		2B90F54A29EC26C3008C7760 /* Custom TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2B90F54B29EC26EF008C7760 /* CustomTabItemStyle.swift */,
+				2B90F54D29EC2713008C7760 /* CustomTabBarStyle.swift */,
+			);
+			path = "Custom TabBar";
+			sourceTree = "<group>";
+		};
+		2BB1ABC329E7CA1C003C6ED7 /* Brewing Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				2B66EFFF29EA8AAF00BC9B5E /* BrewinView.swift */,
+				2BFC68E129E95A1C001318F2 /* Stopwatch Subsystem */,
+			);
+			path = "Brewing Subsystem";
+			sourceTree = "<group>";
+		};
+		2BB1ABC429E7CA75003C6ED7 /* Recipe Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				2BB1ABC529E7D02B003C6ED7 /* Recipe.swift */,
+				2BB1ABC729E7D282003C6ED7 /* RecipeViewModel.swift */,
+				2BFC68E429E97693001318F2 /* RecipeOverview.swift */,
+				2B66F00329EA9B5100BC9B5E /* EditRecipe.swift */,
+				2B66F00529EAA0F700BC9B5E /* Instructions */,
+			);
+			path = "Recipe Subsystem";
+			sourceTree = "<group>";
+		};
+		2BB1ABC929E7D45E003C6ED7 /* Beans Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				2B1846A129E7DC27003D892F /* BeansViewModel.swift */,
+				2B1846A329E7DC45003D892F /* Bean.swift */,
+				2BFC68E629E976A7001318F2 /* BeansOverview.swift */,
+				2B6BB15929EAD6D0004CEBB1 /* EditBean.swift */,
+			);
+			path = "Beans Subsystem";
+			sourceTree = "<group>";
+		};
+		2BFC68E129E95A1C001318F2 /* Stopwatch Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				2B10119529E8666800B90276 /* StopwatchView.swift */,
+				2BFC68E229E95A5A001318F2 /* Stopwatch.swift */,
+			);
+			path = "Stopwatch Subsystem";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B598ECB29E6FD5100072B52 /* Brewin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B598EF029E6FD5200072B52 /* Build configuration list for PBXNativeTarget "Brewin" */;
+			buildPhases = (
+				2B598EC829E6FD5100072B52 /* Sources */,
+				2B598EC929E6FD5100072B52 /* Frameworks */,
+				2B598ECA29E6FD5100072B52 /* Resources */,
+				2B10118A29E83C9000B90276 /* ShellScript */,
+				2B10118B29E83CA000B90276 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brewin;
+			packageProductDependencies = (
+				2B90F54829EC24F1008C7760 /* TabBar */,
+			);
+			productName = Brewin;
+			productReference = 2B598ECC29E6FD5100072B52 /* Brewin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B598EDB29E6FD5200072B52 /* BrewinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B598EF329E6FD5200072B52 /* Build configuration list for PBXNativeTarget "BrewinTests" */;
+			buildPhases = (
+				2B598ED829E6FD5200072B52 /* Sources */,
+				2B598ED929E6FD5200072B52 /* Frameworks */,
+				2B598EDA29E6FD5200072B52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B598EDE29E6FD5200072B52 /* PBXTargetDependency */,
+			);
+			name = BrewinTests;
+			productName = BrewinTests;
+			productReference = 2B598EDC29E6FD5200072B52 /* BrewinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B598EE529E6FD5200072B52 /* BrewinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B598EF629E6FD5200072B52 /* Build configuration list for PBXNativeTarget "BrewinUITests" */;
+			buildPhases = (
+				2B598EE229E6FD5200072B52 /* Sources */,
+				2B598EE329E6FD5200072B52 /* Frameworks */,
+				2B598EE429E6FD5200072B52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B598EE829E6FD5200072B52 /* PBXTargetDependency */,
+			);
+			name = BrewinUITests;
+			productName = BrewinUITests;
+			productReference = 2B598EE629E6FD5200072B52 /* BrewinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B598EC429E6FD5100072B52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2B598ECB29E6FD5100072B52 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					2B598EDB29E6FD5200072B52 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 2B598ECB29E6FD5100072B52;
+					};
+					2B598EE529E6FD5200072B52 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 2B598ECB29E6FD5100072B52;
+					};
+				};
+			};
+			buildConfigurationList = 2B598EC729E6FD5100072B52 /* Build configuration list for PBXProject "Brewin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B598EC329E6FD5100072B52;
+			packageReferences = (
+				2B90F54729EC24F1008C7760 /* XCRemoteSwiftPackageReference "TabBar" */,
+			);
+			productRefGroup = 2B598ECD29E6FD5100072B52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B598ECB29E6FD5100072B52 /* Brewin */,
+				2B598EDB29E6FD5200072B52 /* BrewinTests */,
+				2B598EE529E6FD5200072B52 /* BrewinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B598ECA29E6FD5100072B52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B598ED729E6FD5200072B52 /* Preview Assets.xcassets in Resources */,
+				2B598ED429E6FD5200072B52 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B598EDA29E6FD5200072B52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B598EE429E6FD5200072B52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B10118A29E83C9000B90276 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		2B10118B29E83CA000B90276 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint > /dev/null; then\n swiftlint\nelse\n echo \"warning: SwiftLint not installed, download from https://\ngithub.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B598EC829E6FD5100072B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB1ABC629E7D02B003C6ED7 /* Recipe.swift in Sources */,
+				2B66F00429EA9B5100BC9B5E /* EditRecipe.swift in Sources */,
+				2B66F00229EA8ADC00BC9B5E /* MainView.swift in Sources */,
+				2BB1ABC829E7D282003C6ED7 /* RecipeViewModel.swift in Sources */,
+				2B6BB15A29EAD6D0004CEBB1 /* EditBean.swift in Sources */,
+				2BFC68E729E976A7001318F2 /* BeansOverview.swift in Sources */,
+				2B82749029EAF03E0020A565 /* LogOverview.swift in Sources */,
+				2B82748E29EAF0310020A565 /* LogViewModel.swift in Sources */,
+				2B90F54E29EC2713008C7760 /* CustomTabBarStyle.swift in Sources */,
+				2B10118D29E8431B00B90276 /* Instruction.swift in Sources */,
+				2B82748C29EAF0200020A565 /* Log.swift in Sources */,
+				2BFC68E329E95A5A001318F2 /* Stopwatch.swift in Sources */,
+				2B598ED029E6FD5100072B52 /* BrewinApp.swift in Sources */,
+				2B66F00029EA8AAF00BC9B5E /* BrewinView.swift in Sources */,
+				2BFC68E529E97693001318F2 /* RecipeOverview.swift in Sources */,
+				2B1846A229E7DC27003D892F /* BeansViewModel.swift in Sources */,
+				2B82749229EB014B0020A565 /* SaveLogView.swift in Sources */,
+				2B10119629E8666800B90276 /* StopwatchView.swift in Sources */,
+				2B90F54C29EC26EF008C7760 /* CustomTabItemStyle.swift in Sources */,
+				2B90F54329EC21A5008C7760 /* Test.swift in Sources */,
+				2B10119429E8601A00B90276 /* InstructionList.swift in Sources */,
+				2B1846A429E7DC45003D892F /* Bean.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B598ED829E6FD5200072B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B598EE229E6FD5200072B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B598EEB29E6FD5200072B52 /* BrewinUITests.swift in Sources */,
+				2B598EED29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B598EDE29E6FD5200072B52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B598ECB29E6FD5100072B52 /* Brewin */;
+			targetProxy = 2B598EDD29E6FD5200072B52 /* PBXContainerItemProxy */;
+		};
+		2B598EE829E6FD5200072B52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B598ECB29E6FD5100072B52 /* Brewin */;
+			targetProxy = 2B598EE729E6FD5200072B52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B598EEE29E6FD5200072B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B598EEF29E6FD5200072B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B598EF129E6FD5200072B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brewin/Preview Content\"";
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.ipraktikum.intro.Brewin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B598EF229E6FD5200072B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brewin/Preview Content\"";
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.ipraktikum.intro.Brewin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B598EF429E6FD5200072B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.ipraktikum.intro.BrewinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brewin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brewin";
+			};
+			name = Debug;
+		};
+		2B598EF529E6FD5200072B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.ipraktikum.intro.BrewinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brewin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brewin";
+			};
+			name = Release;
+		};
+		2B598EF729E6FD5200072B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.ipraktikum.intro.BrewinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brewin;
+			};
+			name = Debug;
+		};
+		2B598EF829E6FD5200072B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.ipraktikum.intro.BrewinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brewin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B598EC729E6FD5100072B52 /* Build configuration list for PBXProject "Brewin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B598EEE29E6FD5200072B52 /* Debug */,
+				2B598EEF29E6FD5200072B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B598EF029E6FD5200072B52 /* Build configuration list for PBXNativeTarget "Brewin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B598EF129E6FD5200072B52 /* Debug */,
+				2B598EF229E6FD5200072B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B598EF329E6FD5200072B52 /* Build configuration list for PBXNativeTarget "BrewinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B598EF429E6FD5200072B52 /* Debug */,
+				2B598EF529E6FD5200072B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B598EF629E6FD5200072B52 /* Build configuration list for PBXNativeTarget "BrewinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B598EF729E6FD5200072B52 /* Debug */,
+				2B598EF829E6FD5200072B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B90F54729EC24F1008C7760 /* XCRemoteSwiftPackageReference "TabBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onl1ner/TabBar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B90F54829EC24F1008C7760 /* TabBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B90F54729EC24F1008C7760 /* XCRemoteSwiftPackageReference "TabBar" */;
+			productName = TabBar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2B598EC429E6FD5100072B52 /* Project object */;
+}

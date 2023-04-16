@@ -58,12 +58,12 @@ I should also be able to filter beans or recipes by types, and also mark any rec
 
 
 ## Analysis
-<img src = "./analysis.png">
+<img src = "./Analysis.png">
 
 
 ## System Design
 
-TODO: Include a system design overview describing your application.
+<img src = "./SystemDesign.png">
 
 ## Product Backlog
 BREWIN 1 - Add recipes & beans
