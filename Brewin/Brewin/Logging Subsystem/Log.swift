@@ -16,8 +16,8 @@ class Log: ObservableObject {
     @Published public var grindSize: Double
     @Published public var temp: Int
     @Published public var description: String
-    
-    public init (id: UUID?, recipeId: Recipe.ID, beanId: Bean.ID, recipeName: String, beanName: String, grindSize: Double, temp: Int, description: String) {
+    public init (id: UUID?, recipeId: Recipe.ID, beanId: Bean.ID,
+                 recipeName: String, beanName: String, grindSize: Double, temp: Int, description: String) {
         self.id = id
         self.recipeId = recipeId
         self.beanId = beanId
@@ -35,7 +35,6 @@ extension Log: Hashable {
     public static func == (lhs: Log, rhs: Log) -> Bool {
         lhs.id == rhs.id
     }
-    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }

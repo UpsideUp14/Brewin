@@ -109,8 +109,8 @@ struct BrewinView: View {
                     // List of instructions with the time is shown here for a given recipe
                     Text("Instructions:")
                         .font(.headline)
-                    ForEach(recipeViewModel.recipes, id:\.self) { recipe in
-                        if(recipe.id == brewinViewModel.pickedRecipe) {
+                    ForEach(recipeViewModel.recipes, id: \.self) { recipe in
+                        if recipe.id == brewinViewModel.pickedRecipe {
                             List(recipe.instructions, id: \.self) {
                                 Text("\($0.message)  \(Int($0.time))s")
                             }
@@ -128,21 +128,24 @@ struct BrewinView: View {
             .toolbar {
                 // open a view to all logs
                 ToolbarItem(placement: .cancellationAction) {
-                    Button(action: {brewinViewModel.isShowingLogs.toggle()}) {
+                    Button(action: {brewinViewModel.isShowingLogs.toggle()}, label: {
                         Image(systemName: "list.dash")
-                    }
+                        })
                     .sheet(isPresented: $brewinViewModel.isShowingLogs, content: {
                         LogOverview(logViewModel: logViewModel, isSavingLog: $brewinViewModel.isShowingLogs)
                     })
                 }
                 // Log current brew
                 ToolbarItem(placement: .primaryAction) {
-                    Button(action: {brewinViewModel.isSavingLog.toggle()}) {
+                    Button(action: {brewinViewModel.isSavingLog.toggle()}, label: {
                         Text("Save")
-                    }
+                        })
                     .sheet(isPresented: $brewinViewModel.isSavingLog, content: {
-                        SaveLogView(logViewModel: logViewModel, recipeViewModel: recipeViewModel, beansViewModel: beansViewModel,
-                                    brewinViewModel: brewinViewModel)
+                        SaveLogView(
+                            logViewModel: logViewModel,
+                            recipeViewModel: recipeViewModel,
+                            beansViewModel: beansViewModel,
+                            brewinViewModel: brewinViewModel)
                     })
                 }
             }
@@ -150,7 +153,7 @@ struct BrewinView: View {
     }
     // check if both recipe and beans have been selected
     private func checkSelection() {
-        if (brewinViewModel.pickedRecipe != nil && brewinViewModel.pickedBean != nil) {
+        if brewinViewModel.pickedRecipe != nil && brewinViewModel.pickedBean != nil {
             logger.log("Recipes and Beans are picked. showing rest of UI")
             withAnimation {
                 brewinViewModel.allPicked = true
@@ -170,7 +173,8 @@ struct Background: View {
 
 struct BrewinView_Previews: PreviewProvider {
     static var previews: some View {
-        BrewinView(recipeViewModel: RecipeViewModel.mockRecipeViewModel(), beansViewModel: BeansViewModel.mockBeansViewModel(),
+        BrewinView(
+            recipeViewModel: RecipeViewModel.mockRecipeViewModel(), beansViewModel: BeansViewModel.mockBeansViewModel(),
                    logViewModel: LogViewModel.mockLogViewModel(), brewinViewModel: BrewinViewModel(), logger: Logger())
     }
 }

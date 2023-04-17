@@ -8,8 +8,7 @@
 import SwiftUI
 import os
 
-// Edit or add recipes 
-// TODO: implement saving system
+// Edit or add recipes
 struct EditRecipe: View {
     @ObservedObject var recipeViewModel: RecipeViewModel
     @State var id: UUID?
@@ -23,7 +22,7 @@ struct EditRecipe: View {
                 Section(header: Text("Brewing Method")) {
                     Picker("Select a brewing method", selection: $recipe.brewingMethod) {
                         ForEach(BrewingMethod.allCases, id: \.id) { option in
-                            if(option != .empty) {
+                            if option != .empty {
                                 Text(String(describing: option))
                             }
                         }
@@ -31,24 +30,21 @@ struct EditRecipe: View {
                 }
                 Section(header: Text("Instructions")) {
                     List {
-                        ForEach(recipe.instructions, id: \.self) { instruction in
+                        ForEach(recipe.instructions, id: \.self) { _ in
                         }
                     }
-                    
                 }
                 .toolbar {
                     ToolbarItem(placement: .bottomBar) {
-                        Button(action: {recipe.instructions.append(Instruction.emptyInstruction())}) {
+                        Button(action: {recipe.instructions.append(Instruction.emptyInstruction())}, label: {
                             Image(systemName: "plus")
-                        }
+                            })
                     }
                 }
             }
         }
     }
 }
-
-
 struct EditRecipe_Previews: PreviewProvider {
     static var previews: some View {
         EditRecipe(recipeViewModel: RecipeViewModel.mockRecipeViewModel(), id: UUID(), recipe: Recipe.emptyRecipe())

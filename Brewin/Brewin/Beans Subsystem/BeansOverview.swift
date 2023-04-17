@@ -22,9 +22,11 @@ struct BeansOverview: View {
                 .toolbar {
                     // Add new Bean
                     ToolbarItem(placement: .primaryAction) {
-                        Button(action: {isShowingSheet.toggle()}) {
+                        Button(action: {
+                            isShowingSheet.toggle()
+                        }, label: {
                             Image(systemName: "plus")
-                        }
+                        })
                         .sheet(isPresented: $isShowingSheet, content: {
                             EditBean(beanViewModel: beansViewModel, bean: Bean.emptyBean())
                         })

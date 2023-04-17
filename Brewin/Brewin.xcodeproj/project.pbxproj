@@ -380,6 +380,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		2B10118B29E83CA000B90276 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);

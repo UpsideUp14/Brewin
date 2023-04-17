@@ -13,12 +13,17 @@ struct SaveLogView: View {
     @ObservedObject var beansViewModel: BeansViewModel
     @State public var description: String = ""
     @ObservedObject var brewinViewModel: BrewinViewModel
-    
     var body: some View {
         let recipeName = getRecipeName(array: recipeViewModel.recipes, id: brewinViewModel.pickedRecipe ?? UUID())
         let beanName = getBeanName(array: beansViewModel.beans, id: brewinViewModel.pickedBean ?? UUID())
-        let log = Log(id: UUID(), recipeId: brewinViewModel.pickedRecipe, beanId: brewinViewModel.pickedBean, recipeName: recipeName,
-                      beanName: beanName, grindSize: brewinViewModel.pickedGrindSize, temp: brewinViewModel.pickedTemp, description: description)
+        let log = Log(id: UUID(),
+                      recipeId: brewinViewModel.pickedRecipe,
+                      beanId: brewinViewModel.pickedBean,
+                      recipeName: recipeName,
+                      beanName: beanName,
+                      grindSize: brewinViewModel.pickedGrindSize,
+                      temp: brewinViewModel.pickedTemp,
+                      description: description)
         NavigationStack {
             Form {
                 Section("Description") {
@@ -29,14 +34,13 @@ struct SaveLogView: View {
                 ToolbarItem(placement: .primaryAction) {
                     Button(action: {
                         logViewModel.logs.append(log)
-                        brewinViewModel.isSavingLog.toggle()}) {
+                        brewinViewModel.isSavingLog.toggle()}, label: {
                         Text("Save")
-                    }
+                    })
                 }
             }
         }
     }
-    
     private func getRecipeName(array: [Recipe], id: UUID) -> String {
         if let recipe = array.first(where: {$0.id == id}) {
             return recipe.name
@@ -53,7 +57,9 @@ struct SaveLogView: View {
 
 struct SaveLogView_Previews: PreviewProvider {
     static var previews: some View {
-        SaveLogView(logViewModel: LogViewModel.mockLogViewModel(), recipeViewModel: RecipeViewModel.mockRecipeViewModel(),
-                    beansViewModel: BeansViewModel.mockBeansViewModel(), brewinViewModel: BrewinViewModel())
+        SaveLogView(
+            logViewModel: LogViewModel.mockLogViewModel(),
+            recipeViewModel: RecipeViewModel.mockRecipeViewModel(),
+            beansViewModel: BeansViewModel.mockBeansViewModel(), brewinViewModel: BrewinViewModel())
     }
 }

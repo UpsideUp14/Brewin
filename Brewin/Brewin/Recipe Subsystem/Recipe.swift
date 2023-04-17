@@ -13,14 +13,12 @@ class Recipe: ObservableObject {
     @Published public var name: String
     @Published public var brewingMethod: BrewingMethod
     @Published public var instructions: [Instruction]
-    
     public init(id: UUID?, name: String, method: BrewingMethod, instructions: [Instruction]) {
         self.id = id
         self.name = name
         self.brewingMethod = method
         self.instructions = instructions
     }
-    
     public static func emptyRecipe () -> Recipe {
         return Recipe(id: UUID(), name: "", method: .empty, instructions: [])
     }
