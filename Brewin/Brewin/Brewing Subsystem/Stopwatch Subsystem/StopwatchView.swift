@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import os
 
 struct StopwatchView: View {
     @ObservedObject var stopwatch: Stopwatch
+    var logger = Logger(subsystem: "Stopwatch Subsystem", category: "Stopwatch")
     var body: some View {
         VStack {
             // Displays time in the format of: minutes:seconds:millisecods
@@ -55,5 +57,8 @@ struct StopwatchView: View {
         stopwatch.milliseconds = 0
         stopwatch.seconds = 0
         stopwatch.minutes = 0
+        logger.log("Stopping stopwatch")
     }
+    
+    
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import os
 
 // Edit or add recipes 
 // TODO: implement saving system
@@ -13,16 +14,7 @@ struct EditRecipe: View {
     @ObservedObject var recipeViewModel: RecipeViewModel
     @State var id: UUID?
     @ObservedObject var recipe: Recipe
-    
-
     var body: some View {
-        /*
-        if let index = recipeViewModel.recipes.firstIndex(where: {$0.id == id}) {
-            recipe = recipeViewModel.recipes[index]
-        } else {
-           // item could not be found
-        }
-         */
         NavigationStack {
             Form {
                 Section(header: Text("Name")) {
@@ -40,14 +32,6 @@ struct EditRecipe: View {
                 Section(header: Text("Instructions")) {
                     List {
                         ForEach(recipe.instructions, id: \.self) { instruction in
-                            /*
-                             HStack {
-                                 TextField("Instruction", text: instruction.message)
-                                 TextField("Time", value: 0, format: .number)
-                                     .keyboardType(.decimalPad)
-                                     .frame(width: 40)
-                             }
-                             */
                         }
                     }
                     

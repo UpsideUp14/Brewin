@@ -7,10 +7,12 @@
 
 import Foundation
 import SwiftUI
+import os
 
 // Shows a different image of coffee taken from an api to fill the empty space
 struct CoffeeImage: View {
     @State private var url: URL?
+    var logger = Logger(subsystem: "Brewing Subsystem", category: "Coffee Image Display")
     var body: some View {
         if let url = url {
             AsyncImage(url: url) { image in
@@ -32,6 +34,7 @@ struct CoffeeImage: View {
     }
     private func getImage() async throws -> URL {
         let url = try await NetworkService.getImageURLData().file
+        logger.log("fetched url data for \(url)")
         return url
     }
 }

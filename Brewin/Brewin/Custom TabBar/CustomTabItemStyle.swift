@@ -25,7 +25,7 @@ struct CustomTabItemStyle: TabItemStyle {
                 Text(title)
                     .foregroundColor(isSelected ? .blue : Color("color.tab.item.foreground"))
                     .frame(width: 90, height: 13)
-                    .font(.system(size: 15))
+                    .font(.custom("Poppins-Medium", size: 15))
             }
 
         }

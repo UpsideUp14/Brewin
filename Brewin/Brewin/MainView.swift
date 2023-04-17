@@ -12,6 +12,7 @@ struct MainView: View {
     private var recipeViewModel: RecipeViewModel = RecipeViewModel.mockRecipeViewModel()
     private var beansViewModel: BeansViewModel = BeansViewModel.mockBeansViewModel()
     private var logViewModel: LogViewModel = LogViewModel.mockLogViewModel()
+    private var brewinViewModel: BrewinViewModel = BrewinViewModel()
     @State private var selection: Item = .second
     
     //Tab bar selection using a third party package (TabBar) for customization
@@ -19,7 +20,7 @@ struct MainView: View {
         TabBar(selection: $selection) {
             RecipeOverview(recipeViewModel: recipeViewModel)
                 .tabItem(for: Item.first)
-            BrewinView(recipeViewModel: recipeViewModel, beansViewModel: beansViewModel, logViewModel: logViewModel)
+            BrewinView(recipeViewModel: recipeViewModel, beansViewModel: beansViewModel, logViewModel: logViewModel, brewinViewModel: brewinViewModel)
                 .tabItem(for: Item.second)
             BeansOverview(beansViewModel: beansViewModel)
                 .tabItem(for: Item.third)

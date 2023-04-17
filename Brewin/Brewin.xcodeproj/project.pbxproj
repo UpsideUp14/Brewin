@@ -14,8 +14,6 @@
 		2B598ED029E6FD5100072B52 /* BrewinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B598ECF29E6FD5100072B52 /* BrewinApp.swift */; };
 		2B598ED429E6FD5200072B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B598ED329E6FD5200072B52 /* Assets.xcassets */; };
 		2B598ED729E6FD5200072B52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B598ED629E6FD5200072B52 /* Preview Assets.xcassets */; };
-		2B598EEB29E6FD5200072B52 /* BrewinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B598EEA29E6FD5200072B52 /* BrewinUITests.swift */; };
-		2B598EED29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B598EEC29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift */; };
 		2B66F00029EA8AAF00BC9B5E /* BrewinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66EFFF29EA8AAF00BC9B5E /* BrewinView.swift */; };
 		2B66F00229EA8ADC00BC9B5E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66F00129EA8ADC00BC9B5E /* MainView.swift */; };
 		2B66F00429EA9B5100BC9B5E /* EditRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66F00329EA9B5100BC9B5E /* EditRecipe.swift */; };
@@ -24,7 +22,6 @@
 		2B82748E29EAF0310020A565 /* LogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82748D29EAF0310020A565 /* LogViewModel.swift */; };
 		2B82749029EAF03E0020A565 /* LogOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82748F29EAF03E0020A565 /* LogOverview.swift */; };
 		2B82749229EB014B0020A565 /* SaveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82749129EB014B0020A565 /* SaveLogView.swift */; };
-		2B90F54329EC21A5008C7760 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F54229EC21A5008C7760 /* Test.swift */; };
 		2B90F54929EC24F1008C7760 /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = 2B90F54829EC24F1008C7760 /* TabBar */; };
 		2B90F54C29EC26EF008C7760 /* CustomTabItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F54B29EC26EF008C7760 /* CustomTabItemStyle.swift */; };
 		2B90F54E29EC2713008C7760 /* CustomTabBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F54D29EC2713008C7760 /* CustomTabBarStyle.swift */; };
@@ -32,6 +29,8 @@
 		2B90F55929EC5B56008C7760 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F55829EC5B56008C7760 /* NetworkService.swift */; };
 		2BB1ABC629E7D02B003C6ED7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1ABC529E7D02B003C6ED7 /* Recipe.swift */; };
 		2BB1ABC829E7D282003C6ED7 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1ABC729E7D282003C6ED7 /* RecipeViewModel.swift */; };
+		2BEB2F9729ED70C800F8F533 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB2F9629ED70C800F8F533 /* Poppins-Medium.ttf */; };
+		2BEB2F9A29ED751000F8F533 /* BrewinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB2F9929ED751000F8F533 /* BrewinViewModel.swift */; };
 		2BFC68E329E95A5A001318F2 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E229E95A5A001318F2 /* Stopwatch.swift */; };
 		2BFC68E529E97693001318F2 /* RecipeOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E429E97693001318F2 /* RecipeOverview.swift */; };
 		2BFC68E729E976A7001318F2 /* BeansOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E629E976A7001318F2 /* BeansOverview.swift */; };
@@ -65,8 +64,6 @@
 		2B598ED629E6FD5200072B52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B598EDC29E6FD5200072B52 /* BrewinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B598EE629E6FD5200072B52 /* BrewinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B598EEA29E6FD5200072B52 /* BrewinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewinUITests.swift; sourceTree = "<group>"; };
-		2B598EEC29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewinUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2B66EFFF29EA8AAF00BC9B5E /* BrewinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewinView.swift; sourceTree = "<group>"; };
 		2B66F00129EA8ADC00BC9B5E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2B66F00329EA9B5100BC9B5E /* EditRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipe.swift; sourceTree = "<group>"; };
@@ -75,13 +72,15 @@
 		2B82748D29EAF0310020A565 /* LogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewModel.swift; sourceTree = "<group>"; };
 		2B82748F29EAF03E0020A565 /* LogOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOverview.swift; sourceTree = "<group>"; };
 		2B82749129EB014B0020A565 /* SaveLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLogView.swift; sourceTree = "<group>"; };
-		2B90F54229EC21A5008C7760 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		2B90F54B29EC26EF008C7760 /* CustomTabItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItemStyle.swift; sourceTree = "<group>"; };
 		2B90F54D29EC2713008C7760 /* CustomTabBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarStyle.swift; sourceTree = "<group>"; };
 		2B90F55529EC5A49008C7760 /* CoffeeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeImage.swift; sourceTree = "<group>"; };
 		2B90F55829EC5B56008C7760 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2BB1ABC529E7D02B003C6ED7 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		2BB1ABC729E7D282003C6ED7 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		2BEB2F9629ED70C800F8F533 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.ttf"; path = "../../Assets/Poppins/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		2BEB2F9829ED719500F8F533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2BEB2F9929ED751000F8F533 /* BrewinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewinViewModel.swift; sourceTree = "<group>"; };
 		2BFC68E229E95A5A001318F2 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		2BFC68E429E97693001318F2 /* RecipeOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverview.swift; sourceTree = "<group>"; };
 		2BFC68E629E976A7001318F2 /* BeansOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeansOverview.swift; sourceTree = "<group>"; };
@@ -117,8 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				2B598ECE29E6FD5100072B52 /* Brewin */,
-				2B598EDF29E6FD5200072B52 /* BrewinTests */,
-				2B598EE929E6FD5200072B52 /* BrewinUITests */,
+				2BEB2F9429ED703600F8F533 /* Fonts */,
 				2B598ECD29E6FD5100072B52 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +134,7 @@
 		2B598ECE29E6FD5100072B52 /* Brewin */ = {
 			isa = PBXGroup;
 			children = (
+				2BEB2F9829ED719500F8F533 /* Info.plist */,
 				2B598ECF29E6FD5100072B52 /* BrewinApp.swift */,
 				2B66F00129EA8ADC00BC9B5E /* MainView.swift */,
 				2B598ED329E6FD5200072B52 /* Assets.xcassets */,
@@ -145,7 +144,6 @@
 				2BB1ABC929E7D45E003C6ED7 /* Beans Subsystem */,
 				2B82748A29EAEFE70020A565 /* Logging Subsystem */,
 				2B598ED529E6FD5200072B52 /* Preview Content */,
-				2B90F54229EC21A5008C7760 /* Test.swift */,
 			);
 			path = Brewin;
 			sourceTree = "<group>";
@@ -156,22 +154,6 @@
 				2B598ED629E6FD5200072B52 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2B598EDF29E6FD5200072B52 /* BrewinTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BrewinTests;
-			sourceTree = "<group>";
-		};
-		2B598EE929E6FD5200072B52 /* BrewinUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2B598EEA29E6FD5200072B52 /* BrewinUITests.swift */,
-				2B598EEC29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift */,
-			);
-			path = BrewinUITests;
 			sourceTree = "<group>";
 		};
 		2B66F00529EAA0F700BC9B5E /* Instructions */ = {
@@ -214,8 +196,9 @@
 		2BB1ABC329E7CA1C003C6ED7 /* Brewing Subsystem */ = {
 			isa = PBXGroup;
 			children = (
-				2B90F55729EC5B3B008C7760 /* Coffee Image */,
+				2BEB2F9929ED751000F8F533 /* BrewinViewModel.swift */,
 				2B66EFFF29EA8AAF00BC9B5E /* BrewinView.swift */,
+				2B90F55729EC5B3B008C7760 /* Coffee Image */,
 				2BFC68E129E95A1C001318F2 /* Stopwatch Subsystem */,
 			);
 			path = "Brewing Subsystem";
@@ -244,6 +227,14 @@
 			path = "Beans Subsystem";
 			sourceTree = "<group>";
 		};
+		2BEB2F9429ED703600F8F533 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB2F9629ED70C800F8F533 /* Poppins-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		2BFC68E129E95A1C001318F2 /* Stopwatch Subsystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,7 +254,7 @@
 				2B598EC829E6FD5100072B52 /* Sources */,
 				2B598EC929E6FD5100072B52 /* Frameworks */,
 				2B598ECA29E6FD5100072B52 /* Resources */,
-				2B10118B29E83CA000B90276 /* ShellScript */,
+				2B10118B29E83CA000B90276 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -364,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEB2F9729ED70C800F8F533 /* Poppins-Medium.ttf in Resources */,
 				2B598ED729E6FD5200072B52 /* Preview Assets.xcassets in Resources */,
 				2B598ED429E6FD5200072B52 /* Assets.xcassets in Resources */,
 			);
@@ -386,7 +378,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B10118B29E83CA000B90276 /* ShellScript */ = {
+		2B10118B29E83CA000B90276 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,6 +387,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -413,6 +406,7 @@
 				2BB1ABC629E7D02B003C6ED7 /* Recipe.swift in Sources */,
 				2B66F00429EA9B5100BC9B5E /* EditRecipe.swift in Sources */,
 				2B66F00229EA8ADC00BC9B5E /* MainView.swift in Sources */,
+				2BEB2F9A29ED751000F8F533 /* BrewinViewModel.swift in Sources */,
 				2BB1ABC829E7D282003C6ED7 /* RecipeViewModel.swift in Sources */,
 				2B6BB15A29EAD6D0004CEBB1 /* EditBean.swift in Sources */,
 				2BFC68E729E976A7001318F2 /* BeansOverview.swift in Sources */,
@@ -431,7 +425,6 @@
 				2B82749229EB014B0020A565 /* SaveLogView.swift in Sources */,
 				2B10119629E8666800B90276 /* StopwatchView.swift in Sources */,
 				2B90F54C29EC26EF008C7760 /* CustomTabItemStyle.swift in Sources */,
-				2B90F54329EC21A5008C7760 /* Test.swift in Sources */,
 				2B1846A429E7DC45003D892F /* Bean.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,8 +440,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B598EEB29E6FD5200072B52 /* BrewinUITests.swift in Sources */,
-				2B598EED29E6FD5200072B52 /* BrewinUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +584,7 @@
 				DEVELOPMENT_TEAM = 7PLLZ436SG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Brewin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -622,6 +614,7 @@
 				DEVELOPMENT_TEAM = 7PLLZ436SG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Brewin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

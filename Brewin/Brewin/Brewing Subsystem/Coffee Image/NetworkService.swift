@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import os
 
 // Network service for fetching and decoding data from api for coffee images
 class NetworkService {

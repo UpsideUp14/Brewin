@@ -12,16 +12,13 @@ struct SaveLogView: View {
     @ObservedObject var recipeViewModel: RecipeViewModel
     @ObservedObject var beansViewModel: BeansViewModel
     @State public var description: String = ""
-    @Binding public var isSavingLog: Bool
-    @Binding var recipeId: Recipe.ID
-    @Binding var beanId: Bean.ID
-    @Binding var grindSize: Double
-    @Binding var temp: Int
+    @ObservedObject var brewinViewModel: BrewinViewModel
     
     var body: some View {
-        let recipeName = getRecipeName(array: recipeViewModel.recipes, id: recipeId!)
-        let beanName = getBeanName(array: beansViewModel.beans, id: beanId!)
-        let log = Log(id: UUID(), recipeId: recipeId, beanId: beanId, recipeName: recipeName, beanName: beanName, grindSize: grindSize, temp: temp, description: description )
+        let recipeName = getRecipeName(array: recipeViewModel.recipes, id: brewinViewModel.pickedRecipe ?? UUID())
+        let beanName = getBeanName(array: beansViewModel.beans, id: brewinViewModel.pickedBean ?? UUID())
+        let log = Log(id: UUID(), recipeId: brewinViewModel.pickedRecipe, beanId: brewinViewModel.pickedBean, recipeName: recipeName,
+                      beanName: beanName, grindSize: brewinViewModel.pickedGrindSize, temp: brewinViewModel.pickedTemp, description: description)
         NavigationStack {
             Form {
                 Section("Description") {
@@ -32,7 +29,7 @@ struct SaveLogView: View {
                 ToolbarItem(placement: .primaryAction) {
                     Button(action: {
                         logViewModel.logs.append(log)
-                        isSavingLog.toggle()}) {
+                        brewinViewModel.isSavingLog.toggle()}) {
                         Text("Save")
                     }
                 }
@@ -57,6 +54,6 @@ struct SaveLogView: View {
 struct SaveLogView_Previews: PreviewProvider {
     static var previews: some View {
         SaveLogView(logViewModel: LogViewModel.mockLogViewModel(), recipeViewModel: RecipeViewModel.mockRecipeViewModel(),
-                    beansViewModel: BeansViewModel.mockBeansViewModel(), isSavingLog: .constant(false), recipeId: .constant(nil), beanId: .constant(nil), grindSize: .constant(0.0), temp: .constant(0))
+                    beansViewModel: BeansViewModel.mockBeansViewModel(), brewinViewModel: BrewinViewModel())
     }
 }

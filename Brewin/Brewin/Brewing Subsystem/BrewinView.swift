@@ -6,23 +6,19 @@
 //
 
 import SwiftUI
+import os
 
 struct BrewinView: View {
     @ObservedObject var recipeViewModel: RecipeViewModel
     @ObservedObject var beansViewModel: BeansViewModel
     @ObservedObject var logViewModel: LogViewModel
-    @State var pickedRecipe: Recipe.ID = nil
-    @State var pickedBean: Bean.ID = nil
-    @State var pickedGrindSize: Double = 0.0
-    @State var pickedTemp: Int = 0
-    @State var allPicked: Bool = false
-    @State var isShowingLogs: Bool = false
-    @State var isSavingLog: Bool = false
+    @ObservedObject var brewinViewModel: BrewinViewModel
+    var logger: Logger = Logger(subsystem: "brewing Subsystem", category: "BrewinView")
     var body: some View {
         NavigationStack {
             VStack {
                 // Only show image if recipe and beans are not picked
-                if !allPicked {
+                if !brewinViewModel.allPicked {
                     CoffeeImage()
                 }
                 HStack {
@@ -33,12 +29,12 @@ struct BrewinView: View {
                         VStack {
                             Text("Select Recipe:")
                                 .font(.headline)
-                            Picker("Recipe", selection: $pickedRecipe) {
+                            Picker("Recipe", selection: $brewinViewModel.pickedRecipe) {
                                 ForEach(recipeViewModel.recipes) { recipe in
                                     Text(recipe.name).tag(recipe.id)
                                 }
                             }
-                            .onChange(of: pickedRecipe) { _ in
+                            .onChange(of: brewinViewModel.pickedRecipe) { _ in
                                 checkSelection()
                             }
                             .frame(height: 10)
@@ -52,12 +48,12 @@ struct BrewinView: View {
                         VStack {
                             Text("Select Beans:")
                                 .font(.headline)
-                            Picker("Beans", selection: $pickedBean) {
+                            Picker("Beans", selection: $brewinViewModel.pickedBean) {
                                 ForEach(beansViewModel.beans) { bean in
                                     Text(bean.name).tag(bean.id)
                                 }
                             }
-                            .onChange(of: pickedBean) { _ in
+                            .onChange(of: brewinViewModel.pickedBean) { _ in
                                 checkSelection()
                             }
                             .frame(height: 10)
@@ -67,7 +63,7 @@ struct BrewinView: View {
                 .frame(width: 280)
                 // Only show Grind size picker, Temp picker, instructions
                 // and stopwatch once valid recipe and beans are picked
-                if allPicked {
+                if brewinViewModel.allPicked {
                     HStack {
                         ZStack {
                             Background()
@@ -78,7 +74,7 @@ struct BrewinView: View {
                                     .frame(height: 10)
                                 // Grind size only between 0.0 to 9.0 according
                                 // to a 1zpresso grinder
-                                Picker("Grind size", selection: $pickedGrindSize) {
+                                Picker("Grind size", selection: $brewinViewModel.pickedGrindSize) {
                                     ForEach(0..<91) { index in
                                         let value = Double(index) / 10
                                         Text(String(format: "%.1f", value)).tag(value)
@@ -99,7 +95,7 @@ struct BrewinView: View {
                                 Text("Water Temprature:")
                                     .font(.headline)
                                     .frame(height: 10)
-                                Picker("Temp", selection: $pickedTemp) {
+                                Picker("Temp", selection: $brewinViewModel.pickedTemp) {
                                     ForEach(60..<101, id: \.self) { temp in
                                         Text("\(temp)").tag(temp)
                                     }
@@ -114,7 +110,7 @@ struct BrewinView: View {
                     Text("Instructions:")
                         .font(.headline)
                     ForEach(recipeViewModel.recipes, id:\.self) { recipe in
-                        if(recipe.id == pickedRecipe) {
+                        if(recipe.id == brewinViewModel.pickedRecipe) {
                             List(recipe.instructions, id: \.self) {
                                 Text("\($0.message)  \(Int($0.time))s")
                             }
@@ -132,21 +128,21 @@ struct BrewinView: View {
             .toolbar {
                 // open a view to all logs
                 ToolbarItem(placement: .cancellationAction) {
-                    Button(action: {isShowingLogs.toggle()}) {
+                    Button(action: {brewinViewModel.isShowingLogs.toggle()}) {
                         Image(systemName: "list.dash")
                     }
-                    .sheet(isPresented: $isShowingLogs, content: {
-                        LogOverview(logViewModel: logViewModel, isSavingLog: $isShowingLogs)
+                    .sheet(isPresented: $brewinViewModel.isShowingLogs, content: {
+                        LogOverview(logViewModel: logViewModel, isSavingLog: $brewinViewModel.isShowingLogs)
                     })
                 }
                 // Log current brew
                 ToolbarItem(placement: .primaryAction) {
-                    Button(action: {isSavingLog.toggle()}) {
+                    Button(action: {brewinViewModel.isSavingLog.toggle()}) {
                         Text("Save")
                     }
-                    .sheet(isPresented: $isSavingLog, content: {
+                    .sheet(isPresented: $brewinViewModel.isSavingLog, content: {
                         SaveLogView(logViewModel: logViewModel, recipeViewModel: recipeViewModel, beansViewModel: beansViewModel,
-                                    isSavingLog: $isSavingLog, recipeId: $pickedRecipe, beanId: $pickedBean, grindSize: $pickedGrindSize, temp: $pickedTemp)
+                                    brewinViewModel: brewinViewModel)
                     })
                 }
             }
@@ -154,9 +150,10 @@ struct BrewinView: View {
     }
     // check if both recipe and beans have been selected
     private func checkSelection() {
-        if (pickedRecipe != nil && pickedBean != nil) {
+        if (brewinViewModel.pickedRecipe != nil && brewinViewModel.pickedBean != nil) {
+            logger.log("Recipes and Beans are picked. showing rest of UI")
             withAnimation {
-                self.allPicked = true
+                brewinViewModel.allPicked = true
             }
         }
     }
@@ -173,6 +170,7 @@ struct Background: View {
 
 struct BrewinView_Previews: PreviewProvider {
     static var previews: some View {
-        BrewinView(recipeViewModel: RecipeViewModel.mockRecipeViewModel(), beansViewModel: BeansViewModel.mockBeansViewModel(), logViewModel: LogViewModel.mockLogViewModel())
+        BrewinView(recipeViewModel: RecipeViewModel.mockRecipeViewModel(), beansViewModel: BeansViewModel.mockBeansViewModel(),
+                   logViewModel: LogViewModel.mockLogViewModel(), brewinViewModel: BrewinViewModel(), logger: Logger())
     }
 }
