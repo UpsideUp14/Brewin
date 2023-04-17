@@ -13,10 +13,11 @@ class Log: ObservableObject {
     @Published public var beanId: Bean.ID
     @Published public var recipeName: String
     @Published public var beanName: String
-    @Published public var grindSize: Int
+    @Published public var grindSize: Double
     @Published public var temp: Int
+    @Published public var description: String
     
-    public init (id: UUID?, recipeId: Recipe.ID, beanId: Bean.ID, recipeName: String, beanName: String, grindSize: Int, temp: Int) {
+    public init (id: UUID?, recipeId: Recipe.ID, beanId: Bean.ID, recipeName: String, beanName: String, grindSize: Double, temp: Int, description: String) {
         self.id = id
         self.recipeId = recipeId
         self.beanId = beanId
@@ -24,6 +25,7 @@ class Log: ObservableObject {
         self.beanName = beanName
         self.grindSize = grindSize
         self.temp = temp
+        self.description = description
     }
 }
 

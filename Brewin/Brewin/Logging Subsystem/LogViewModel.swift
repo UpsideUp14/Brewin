@@ -18,8 +18,8 @@ class LogViewModel: ObservableObject {
         var recipe1 = UUID()
         var bean1 = UUID()
         var bean2 = UUID()
-        var log1 = Log(id: UUID(), recipeId: recipe1, beanId: bean1, recipeName: "V60 Recipe", beanName: "Yirgacheffe", grindSize: 7, temp: 95)
-        var log2 = Log(id: UUID(), recipeId: recipe1, beanId: bean2, recipeName: "V60 Recipe", beanName: "Toba", grindSize: 6, temp: 88)
+        var log1 = Log(id: UUID(), recipeId: recipe1, beanId: bean1, recipeName: "V60 Recipe", beanName: "Yirgacheffe", grindSize: 7.0, temp: 95, description: "Terrible Coffee")
+        var log2 = Log(id: UUID(), recipeId: recipe1, beanId: bean2, recipeName: "V60 Recipe", beanName: "Toba", grindSize: 6.0, temp: 88, description: "Yikes")
         
         var logs = [log1, log2]
         

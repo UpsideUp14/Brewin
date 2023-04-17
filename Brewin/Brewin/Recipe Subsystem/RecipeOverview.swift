@@ -20,6 +20,7 @@ struct RecipeOverview: View {
             }
                 .navigationTitle("Recipes")
                 .toolbar {
+                    // opens a sheet to add new recipes
                     ToolbarItem(placement: .primaryAction) {
                         Button(action: {isShowingSheet.toggle()}) {
                             Image(systemName: "plus")

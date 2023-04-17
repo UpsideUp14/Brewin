@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Test: View {
     var body: some View {
-        @State var selection = 0
+        CoffeeImage()
     }
 }
 

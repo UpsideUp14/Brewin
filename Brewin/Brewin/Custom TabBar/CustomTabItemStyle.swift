@@ -8,8 +8,8 @@
 import SwiftUI
 import TabBar
 
+// Tab bar items customization for package: (TabBar)
 struct CustomTabItemStyle: TabItemStyle {
-    
     public func tabItem(icon: String, title: String, isSelected: Bool) -> some View {
         ZStack {
             if isSelected {
@@ -31,5 +31,4 @@ struct CustomTabItemStyle: TabItemStyle {
         }
         .padding(.vertical, 15.0)
     }
-    
 }

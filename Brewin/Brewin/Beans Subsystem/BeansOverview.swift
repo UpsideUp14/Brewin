@@ -10,9 +10,8 @@ import SwiftUI
 struct BeansOverview: View {
     @State private var isShowingSheet = false
     @ObservedObject var beansViewModel: BeansViewModel
-    
     var body: some View {
-        NavigationStack{
+        NavigationStack {
             List {
                 ForEach(beansViewModel.beans, id: \.self) { bean in
                     NavigationLink(bean.name, destination: EditBean(beanViewModel: beansViewModel, bean: bean)
@@ -21,6 +20,7 @@ struct BeansOverview: View {
             }
                 .navigationTitle("Beans")
                 .toolbar {
+                    // Add new Bean
                     ToolbarItem(placement: .primaryAction) {
                         Button(action: {isShowingSheet.toggle()}) {
                             Image(systemName: "plus")

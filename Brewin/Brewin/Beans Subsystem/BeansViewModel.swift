@@ -9,12 +9,10 @@ import Foundation
 
 class BeansViewModel: ObservableObject {
     @Published var beans: [Bean]
-    
-    
+
     init(beans: [Bean]) {
         self.beans = beans
     }
-    
     public static func mockBeansViewModel() -> BeansViewModel {
         let ethiopianBeanId = UUID()
         let ethiopianBean = Bean(id: ethiopianBeanId, name: "Yirgacheffe", origin: "Ethiopia", process: "Washed", height: 2200, notes: "-Blueberry\n-Chocolate")

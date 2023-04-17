@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B10118D29E8431B00B90276 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10118C29E8431B00B90276 /* Instruction.swift */; };
-		2B10119429E8601A00B90276 /* InstructionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10119329E8601A00B90276 /* InstructionList.swift */; };
 		2B10119629E8666800B90276 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10119529E8666800B90276 /* StopwatchView.swift */; };
 		2B1846A229E7DC27003D892F /* BeansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A129E7DC27003D892F /* BeansViewModel.swift */; };
 		2B1846A429E7DC45003D892F /* Bean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A329E7DC45003D892F /* Bean.swift */; };
@@ -29,6 +28,8 @@
 		2B90F54929EC24F1008C7760 /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = 2B90F54829EC24F1008C7760 /* TabBar */; };
 		2B90F54C29EC26EF008C7760 /* CustomTabItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F54B29EC26EF008C7760 /* CustomTabItemStyle.swift */; };
 		2B90F54E29EC2713008C7760 /* CustomTabBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F54D29EC2713008C7760 /* CustomTabBarStyle.swift */; };
+		2B90F55629EC5A49008C7760 /* CoffeeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F55529EC5A49008C7760 /* CoffeeImage.swift */; };
+		2B90F55929EC5B56008C7760 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F55829EC5B56008C7760 /* NetworkService.swift */; };
 		2BB1ABC629E7D02B003C6ED7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1ABC529E7D02B003C6ED7 /* Recipe.swift */; };
 		2BB1ABC829E7D282003C6ED7 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1ABC729E7D282003C6ED7 /* RecipeViewModel.swift */; };
 		2BFC68E329E95A5A001318F2 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E229E95A5A001318F2 /* Stopwatch.swift */; };
@@ -55,7 +56,6 @@
 
 /* Begin PBXFileReference section */
 		2B10118C29E8431B00B90276 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
-		2B10119329E8601A00B90276 /* InstructionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionList.swift; sourceTree = "<group>"; };
 		2B10119529E8666800B90276 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		2B1846A129E7DC27003D892F /* BeansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeansViewModel.swift; sourceTree = "<group>"; };
 		2B1846A329E7DC45003D892F /* Bean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bean.swift; sourceTree = "<group>"; };
@@ -78,6 +78,8 @@
 		2B90F54229EC21A5008C7760 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		2B90F54B29EC26EF008C7760 /* CustomTabItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItemStyle.swift; sourceTree = "<group>"; };
 		2B90F54D29EC2713008C7760 /* CustomTabBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarStyle.swift; sourceTree = "<group>"; };
+		2B90F55529EC5A49008C7760 /* CoffeeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeImage.swift; sourceTree = "<group>"; };
+		2B90F55829EC5B56008C7760 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2BB1ABC529E7D02B003C6ED7 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		2BB1ABC729E7D282003C6ED7 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		2BFC68E229E95A5A001318F2 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
@@ -176,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				2B10118C29E8431B00B90276 /* Instruction.swift */,
-				2B10119329E8601A00B90276 /* InstructionList.swift */,
 			);
 			path = Instructions;
 			sourceTree = "<group>";
@@ -201,9 +202,19 @@
 			path = "Custom TabBar";
 			sourceTree = "<group>";
 		};
+		2B90F55729EC5B3B008C7760 /* Coffee Image */ = {
+			isa = PBXGroup;
+			children = (
+				2B90F55529EC5A49008C7760 /* CoffeeImage.swift */,
+				2B90F55829EC5B56008C7760 /* NetworkService.swift */,
+			);
+			path = "Coffee Image";
+			sourceTree = "<group>";
+		};
 		2BB1ABC329E7CA1C003C6ED7 /* Brewing Subsystem */ = {
 			isa = PBXGroup;
 			children = (
+				2B90F55729EC5B3B008C7760 /* Coffee Image */,
 				2B66EFFF29EA8AAF00BC9B5E /* BrewinView.swift */,
 				2BFC68E129E95A1C001318F2 /* Stopwatch Subsystem */,
 			);
@@ -252,7 +263,6 @@
 				2B598EC829E6FD5100072B52 /* Sources */,
 				2B598EC929E6FD5100072B52 /* Frameworks */,
 				2B598ECA29E6FD5100072B52 /* Resources */,
-				2B10118A29E83C9000B90276 /* ShellScript */,
 				2B10118B29E83CA000B90276 /* ShellScript */,
 			);
 			buildRules = (
@@ -376,23 +386,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B10118A29E83C9000B90276 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-		};
 		2B10118B29E83CA000B90276 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,7 +401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint > /dev/null; then\n swiftlint\nelse\n echo \"warning: SwiftLint not installed, download from https://\ngithub.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n swiftlint\nelse\n echo \"warning: SwiftLint not installed, download from https://\ngithub.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -427,7 +420,9 @@
 				2B82748E29EAF0310020A565 /* LogViewModel.swift in Sources */,
 				2B90F54E29EC2713008C7760 /* CustomTabBarStyle.swift in Sources */,
 				2B10118D29E8431B00B90276 /* Instruction.swift in Sources */,
+				2B90F55929EC5B56008C7760 /* NetworkService.swift in Sources */,
 				2B82748C29EAF0200020A565 /* Log.swift in Sources */,
+				2B90F55629EC5A49008C7760 /* CoffeeImage.swift in Sources */,
 				2BFC68E329E95A5A001318F2 /* Stopwatch.swift in Sources */,
 				2B598ED029E6FD5100072B52 /* BrewinApp.swift in Sources */,
 				2B66F00029EA8AAF00BC9B5E /* BrewinView.swift in Sources */,
@@ -437,7 +432,6 @@
 				2B10119629E8666800B90276 /* StopwatchView.swift in Sources */,
 				2B90F54C29EC26EF008C7760 /* CustomTabItemStyle.swift in Sources */,
 				2B90F54329EC21A5008C7760 /* Test.swift in Sources */,
-				2B10119429E8601A00B90276 /* InstructionList.swift in Sources */,
 				2B1846A429E7DC45003D892F /* Bean.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

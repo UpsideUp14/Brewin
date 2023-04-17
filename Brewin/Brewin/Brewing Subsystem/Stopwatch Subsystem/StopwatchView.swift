@@ -9,9 +9,9 @@ import SwiftUI
 
 struct StopwatchView: View {
     @ObservedObject var stopwatch: Stopwatch
-    
     var body: some View {
         VStack {
+            // Displays time in the format of: minutes:seconds:millisecods
             HStack(alignment: .bottom, spacing: 2){
                 Text(String(format: "%02d:%02d", stopwatch.minutes, stopwatch.seconds))
                     .font(.system(size: 60))
@@ -21,6 +21,7 @@ struct StopwatchView: View {
                     .opacity(0.5)
             }.frame(width: 210, height: 60)
             HStack {
+                // Stopwatch controls (start, pause, and stop (reset))
                 Button(action: {
                     stopwatch.isRunning.toggle()
                 }) {
@@ -28,7 +29,6 @@ struct StopwatchView: View {
                         .resizable()
                         .frame(width: 50, height: 50)
                 }
-                
                 Button(action: {
                     self.reset()
                 }) {
@@ -40,6 +40,7 @@ struct StopwatchView: View {
         }
         .padding()
         .onReceive(stopwatch.timer) { _ in
+            // calculates respective time for each scale after each update
             if stopwatch.isRunning {
                 stopwatch.elapsed += 0.01
                 stopwatch.milliseconds = Int(stopwatch.elapsed * 100.0) % 100
@@ -56,5 +57,3 @@ struct StopwatchView: View {
         stopwatch.minutes = 0
     }
 }
-
-

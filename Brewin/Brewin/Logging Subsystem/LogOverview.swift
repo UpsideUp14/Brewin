@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct LogOverview: View {
     @ObservedObject var logViewModel: LogViewModel
     @Binding public var isSavingLog: Bool
@@ -15,7 +16,8 @@ struct LogOverview: View {
         NavigationStack{
             List {
                 ForEach(logViewModel.logs, id: \.self) { log in
-                    Text("Recipe: \(log.recipeName) \nBeans: \(log.beanName) \nGrindsize \(log.grindSize) \nTemperature: \(log.temp)")
+                    let grindSize = String(format: "%.1f", log.grindSize)
+                    Text("Recipe: \(log.recipeName) \nBeans: \(log.beanName) \nGrindsize: \(grindSize) \nTemperature: \(log.temp) \nDescriptions: \(log.description)")
                 }
             }
             .navigationTitle("Logs")

@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+// Edit or add Beans
+// TODO: implement saving system
 struct EditBean: View {
     @ObservedObject var beanViewModel: BeansViewModel
     @State var id: UUID?
     @ObservedObject var bean: Bean
-
     
     var body: some View {
         /*

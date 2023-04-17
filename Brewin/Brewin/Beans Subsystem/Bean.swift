@@ -14,7 +14,6 @@ class Bean: ObservableObject {
     @Published public var process: String
     @Published public var height: Int
     @Published public var notes: String
-    
     public init(id: UUID?, name: String, origin: String, process: String, height: Int, notes: String) {
         self.id = id
         self.name = name
@@ -23,11 +22,9 @@ class Bean: ObservableObject {
         self.height = height
         self.notes = notes
     }
-    
     public static func emptyBean () -> Bean {
-        Bean(id: nil, name: "", origin: "", process: "", height: 0, notes: "")
+        Bean(id: UUID(), name: "", origin: "", process: "", height: 0, notes: "")
     }
-    
 }
 extension Bean: Identifiable { }
 
@@ -36,7 +33,6 @@ extension Bean: Hashable {
         lhs.id == rhs.id &&
         lhs.name == rhs.name
     }
-    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
         hasher.combine(name)

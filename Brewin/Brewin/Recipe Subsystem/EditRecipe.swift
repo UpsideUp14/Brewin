@@ -7,12 +7,14 @@
 
 import SwiftUI
 
+// Edit or add recipes 
+// TODO: implement saving system
 struct EditRecipe: View {
     @ObservedObject var recipeViewModel: RecipeViewModel
     @State var id: UUID?
     @ObservedObject var recipe: Recipe
-
     
+
     var body: some View {
         /*
         if let index = recipeViewModel.recipes.firstIndex(where: {$0.id == id}) {
@@ -39,12 +41,12 @@ struct EditRecipe: View {
                     List {
                         ForEach(recipe.instructions, id: \.self) { instruction in
                             /*
-                            HStack {
-                                TextField("Instruction", text: instruction.$message)
-                                TextField("Time", value: 0, format: .number)
-                                    .keyboardType(.decimalPad)
-                                    .frame(width: 40)
-                            }
+                             HStack {
+                                 TextField("Instruction", text: instruction.message)
+                                 TextField("Time", value: 0, format: .number)
+                                     .keyboardType(.decimalPad)
+                                     .frame(width: 40)
+                             }
                              */
                         }
                     }
@@ -59,14 +61,12 @@ struct EditRecipe: View {
                 }
             }
         }
-                
     }
-            
 }
 
 
 struct EditRecipe_Previews: PreviewProvider {
     static var previews: some View {
-        EditRecipe(recipeViewModel: RecipeViewModel.mockRecipeViewModel(),id: nil, recipe: Recipe.emptyRecipe())
+        EditRecipe(recipeViewModel: RecipeViewModel.mockRecipeViewModel(), id: UUID(), recipe: Recipe.emptyRecipe())
     }
 }

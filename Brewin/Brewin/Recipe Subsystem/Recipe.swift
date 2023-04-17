@@ -22,7 +22,7 @@ class Recipe: ObservableObject {
     }
     
     public static func emptyRecipe () -> Recipe {
-        return Recipe(id: nil, name: "", method: .empty, instructions: [])
+        return Recipe(id: UUID(), name: "", method: .empty, instructions: [])
     }
 }
 
@@ -34,9 +34,7 @@ enum BrewingMethod: CaseIterable, Identifiable, CustomStringConvertible {
     case frenchpress
     case kalitawave
     case empty
-    
     var id: Self { self }
-    
     var description: String {
         switch self {
         case .v60:
@@ -64,7 +62,6 @@ extension Recipe: Hashable {
         lhs.id == rhs.id &&
         lhs.name == rhs.name
     }
-    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
         hasher.combine(name)

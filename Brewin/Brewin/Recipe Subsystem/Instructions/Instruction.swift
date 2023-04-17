@@ -11,13 +11,11 @@ class Instruction: ObservableObject {
     @Published public var id: UUID?
     @Published public var message: String
     @Published public var time: TimeInterval
-    
     public init(id: UUID? = nil, message: String, time: TimeInterval) {
         self.id = id
         self.message = message
         self.time = time
     }
-    
     public static func emptyInstruction () -> Instruction {
         Instruction(id: nil, message: "", time: 0)
     }
@@ -31,7 +29,6 @@ extension Instruction: Hashable {
         lhs.message == rhs.message &&
         lhs.time == rhs.time
     }
-    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
         hasher.combine(message)
