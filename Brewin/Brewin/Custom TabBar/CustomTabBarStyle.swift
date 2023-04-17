@@ -9,7 +9,7 @@ import SwiftUI
 import TabBar
 
 // Tab bar customization for package TabBar
-struct CustomTabBarStyle: TabBarStyle {
+public struct CustomTabBarStyle: TabBarStyle {
     public func tabBar(with geometry: GeometryProxy, itemsContainer: @escaping () -> AnyView) -> some View {
         itemsContainer()
             .background(Color("color.tab.bar.background"))

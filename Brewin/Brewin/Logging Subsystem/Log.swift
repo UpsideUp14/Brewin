@@ -8,19 +8,19 @@
 import Foundation
 
 class Log: ObservableObject {
-    @Published public var id: UUID?
-    @Published public var recipeId: Recipe.ID
-    @Published public var beanId: Bean.ID
-    @Published public var recipeName: String
-    @Published public var beanName: String
-    @Published public var grindSize: Double
-    @Published public var temp: Int
-    @Published public var description: String
-    public init (id: UUID?, recipeId: Recipe.ID, beanId: Bean.ID,
-                 recipeName: String, beanName: String, grindSize: Double, temp: Int, description: String) {
+    @Published var id: UUID?
+    @Published var recipeName: String
+    @Published var beanName: String
+    @Published var grindSize: Double
+    @Published var temp: Int
+    @Published var description: String
+    init (id: UUID?,
+          recipeName: String,
+          beanName: String,
+          grindSize: Double,
+          temp: Int,
+          description: String) {
         self.id = id
-        self.recipeId = recipeId
-        self.beanId = beanId
         self.recipeName = recipeName
         self.beanName = beanName
         self.grindSize = grindSize
@@ -35,8 +35,7 @@ extension Log: Hashable {
     public static func == (lhs: Log, rhs: Log) -> Bool {
         lhs.id == rhs.id
     }
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
-
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Instruction: ObservableObject {
+public class Instruction: ObservableObject {
     @Published public var id: UUID?
     @Published public var message: String
     @Published public var time: TimeInterval
@@ -29,12 +29,11 @@ extension Instruction: Hashable {
         lhs.message == rhs.message &&
         lhs.time == rhs.time
     }
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
         hasher.combine(message)
         hasher.combine(time)
     }
-
 }
 
 extension Instruction: Comparable {

@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct LogOverview: View {
+public struct LogOverview: View {
     @ObservedObject var logViewModel: LogViewModel
     @Binding public var isSavingLog: Bool
-    var body: some View {
+    public var body: some View {
         NavigationStack {
             List {
                 ForEach(logViewModel.logs, id: \.self) { log in
@@ -27,7 +27,7 @@ struct LogOverview: View {
             .navigationTitle("Logs")
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
-                    Button(action: {isSavingLog.toggle()}, label: {
+                    Button(action: { isSavingLog.toggle() }, label: {
                         Text("Close")
                         })
                 }

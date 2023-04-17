@@ -36,7 +36,7 @@ struct EditRecipe: View {
                 }
                 .toolbar {
                     ToolbarItem(placement: .bottomBar) {
-                        Button(action: {recipe.instructions.append(Instruction.emptyInstruction())}, label: {
+                        Button(action: { recipe.instructions.append(Instruction.emptyInstruction()) }, label: {
                             Image(systemName: "plus")
                             })
                     }

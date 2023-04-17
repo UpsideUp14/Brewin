@@ -6,20 +6,20 @@
 //
 
 import Foundation
-import SwiftUI
+import Swift
 
 class Recipe: ObservableObject {
-    @Published public var id: UUID?
-    @Published public var name: String
-    @Published public var brewingMethod: BrewingMethod
-    @Published public var instructions: [Instruction]
-    public init(id: UUID?, name: String, method: BrewingMethod, instructions: [Instruction]) {
+    @Published var id: UUID?
+    @Published var name: String
+    @Published var brewingMethod: BrewingMethod
+    @Published var instructions: [Instruction]
+    init(id: UUID?, name: String, method: BrewingMethod, instructions: [Instruction]) {
         self.id = id
         self.name = name
         self.brewingMethod = method
         self.instructions = instructions
     }
-    public static func emptyRecipe () -> Recipe {
+    static func emptyRecipe () -> Recipe {
         return Recipe(id: UUID(), name: "", method: .empty, instructions: [])
     }
 }
@@ -64,7 +64,6 @@ extension Recipe: Hashable {
         hasher.combine(id)
         hasher.combine(name)
     }
-
 }
 
 extension Recipe: Comparable {

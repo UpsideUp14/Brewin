@@ -9,10 +9,10 @@ import SwiftUI
 import TabBar
 
 struct MainView: View {
-    private var recipeViewModel: RecipeViewModel = RecipeViewModel.mockRecipeViewModel()
-    private var beansViewModel: BeansViewModel = BeansViewModel.mockBeansViewModel()
-    private var logViewModel: LogViewModel = LogViewModel.mockLogViewModel()
-    private var brewinViewModel: BrewinViewModel = BrewinViewModel()
+    private var recipeViewModel = RecipeViewModel.mockRecipeViewModel()
+    private var beansViewModel = BeansViewModel.mockBeansViewModel()
+    private var logViewModel = LogViewModel.mockLogViewModel()
+    private var brewinViewModel = BrewinViewModel()
     @State private var selection: Item = .second
     // Tab bar selection using a third party package
     // (TabBar) for customization
@@ -20,8 +20,10 @@ struct MainView: View {
         TabBar(selection: $selection) {
             RecipeOverview(recipeViewModel: recipeViewModel)
                 .tabItem(for: Item.first)
-            BrewinView(recipeViewModel: recipeViewModel, beansViewModel: beansViewModel,
-                       logViewModel: logViewModel, brewinViewModel: brewinViewModel)
+            BrewinView(recipeViewModel: recipeViewModel,
+                       beansViewModel: beansViewModel,
+                       logViewModel: logViewModel,
+                       brewinViewModel: brewinViewModel)
                 .tabItem(for: Item.second)
             BeansOverview(beansViewModel: beansViewModel)
                 .tabItem(for: Item.third)

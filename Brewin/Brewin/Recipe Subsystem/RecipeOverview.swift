@@ -22,7 +22,7 @@ struct RecipeOverview: View {
                 .toolbar {
                     // opens a sheet to add new recipes
                     ToolbarItem(placement: .primaryAction) {
-                        Button(action: {isShowingSheet.toggle()}, label: {
+                        Button(action: { isShowingSheet.toggle() }, label: {
                             Image(systemName: "plus")
                             })
                         .sheet(isPresented: $isShowingSheet, content: {

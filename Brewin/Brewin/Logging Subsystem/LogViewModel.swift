@@ -8,25 +8,18 @@
 import Foundation
 
 class LogViewModel: ObservableObject {
-    @Published public var logs: [Log]
-    public init (logs: [Log]) {
+    @Published var logs: [Log]
+    init (logs: [Log]) {
         self.logs = logs
     }
-    public static func mockLogViewModel () -> LogViewModel {
-        let recipe1 = UUID()
-        let bean1 = UUID()
-        let bean2 = UUID()
+    static func mockLogViewModel () -> LogViewModel {
         let log1 = Log(id: UUID(),
-                       recipeId: recipe1,
-                       beanId: bean1,
                        recipeName: "V60 Recipe",
                        beanName: "Yirgacheffe",
                        grindSize: 7.0,
                        temp: 95,
                        description: "Terrible Coffee")
         let log2 = Log(id: UUID(),
-                       recipeId: recipe1,
-                       beanId: bean2,
                        recipeName: "V60 Recipe",
                        beanName: "Toba",
                        grindSize: 6.0,

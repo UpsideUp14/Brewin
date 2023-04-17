@@ -29,8 +29,8 @@
 		2B90F55929EC5B56008C7760 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F55829EC5B56008C7760 /* NetworkService.swift */; };
 		2BB1ABC629E7D02B003C6ED7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1ABC529E7D02B003C6ED7 /* Recipe.swift */; };
 		2BB1ABC829E7D282003C6ED7 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1ABC729E7D282003C6ED7 /* RecipeViewModel.swift */; };
-		2BEB2F9729ED70C800F8F533 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB2F9629ED70C800F8F533 /* Poppins-Medium.ttf */; };
 		2BEB2F9A29ED751000F8F533 /* BrewinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB2F9929ED751000F8F533 /* BrewinViewModel.swift */; };
+		2BEB2F9C29EDA92F00F8F533 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB2F9B29EDA92E00F8F533 /* Poppins-Medium.ttf */; };
 		2BFC68E329E95A5A001318F2 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E229E95A5A001318F2 /* Stopwatch.swift */; };
 		2BFC68E529E97693001318F2 /* RecipeOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E429E97693001318F2 /* RecipeOverview.swift */; };
 		2BFC68E729E976A7001318F2 /* BeansOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC68E629E976A7001318F2 /* BeansOverview.swift */; };
@@ -78,9 +78,9 @@
 		2B90F55829EC5B56008C7760 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2BB1ABC529E7D02B003C6ED7 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		2BB1ABC729E7D282003C6ED7 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
-		2BEB2F9629ED70C800F8F533 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.ttf"; path = "../../Assets/Poppins/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		2BEB2F9829ED719500F8F533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2BEB2F9929ED751000F8F533 /* BrewinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewinViewModel.swift; sourceTree = "<group>"; };
+		2BEB2F9B29EDA92E00F8F533 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		2BFC68E229E95A5A001318F2 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		2BFC68E429E97693001318F2 /* RecipeOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverview.swift; sourceTree = "<group>"; };
 		2BFC68E629E976A7001318F2 /* BeansOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeansOverview.swift; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 		2BEB2F9429ED703600F8F533 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				2BEB2F9629ED70C800F8F533 /* Poppins-Medium.ttf */,
+				2BEB2F9B29EDA92E00F8F533 /* Poppins-Medium.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BEB2F9729ED70C800F8F533 /* Poppins-Medium.ttf in Resources */,
+				2BEB2F9C29EDA92F00F8F533 /* Poppins-Medium.ttf in Resources */,
 				2B598ED729E6FD5200072B52 /* Preview Assets.xcassets in Resources */,
 				2B598ED429E6FD5200072B52 /* Assets.xcassets in Resources */,
 			);

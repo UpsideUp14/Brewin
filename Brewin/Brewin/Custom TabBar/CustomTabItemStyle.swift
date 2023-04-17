@@ -9,7 +9,7 @@ import SwiftUI
 import TabBar
 
 // Tab bar items customization for package: (TabBar)
-struct CustomTabItemStyle: TabItemStyle {
+public struct CustomTabItemStyle: TabItemStyle {
     public func tabItem(icon: String, title: String, isSelected: Bool) -> some View {
         ZStack {
             if isSelected {
@@ -27,7 +27,6 @@ struct CustomTabItemStyle: TabItemStyle {
                     .frame(width: 90, height: 13)
                     .font(.custom("Poppins-Medium", size: 15))
             }
-
         }
         .padding(.vertical, 15.0)
     }

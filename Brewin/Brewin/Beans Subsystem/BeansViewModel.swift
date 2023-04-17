@@ -13,7 +13,7 @@ class BeansViewModel: ObservableObject {
     init(beans: [Bean]) {
         self.beans = beans
     }
-    public static func mockBeansViewModel() -> BeansViewModel {
+    static func mockBeansViewModel() -> BeansViewModel {
         let ethiopianBeanId = UUID()
         let ethiopianBean = Bean(id: ethiopianBeanId,
                                  name: "Yirgacheffe",
@@ -34,9 +34,11 @@ class BeansViewModel: ObservableObject {
                           process: "Comedian",
                           height: 181,
                           notes: "-Teddy\n-Bear")
-        let beans = [ethiopianBean,
-                     sumatranBean,
-                     mrBean]
+        let beans = [
+            ethiopianBean,
+            sumatranBean,
+            mrBean
+        ]
         return BeansViewModel(beans: beans)
     }
 }

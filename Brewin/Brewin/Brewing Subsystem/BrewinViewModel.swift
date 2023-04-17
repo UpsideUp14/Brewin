@@ -12,7 +12,7 @@ class BrewinViewModel: ObservableObject {
     @Published var pickedBean: Bean.ID = nil
     @Published var pickedGrindSize: Double = 0.0
     @Published var pickedTemp: Int = 0
-    @Published var allPicked: Bool = false
-    @Published var isShowingLogs: Bool = false
-    @Published var isSavingLog: Bool = false
+    @Published var allPicked = false
+    @Published var isShowingLogs = false
+    @Published var isSavingLog = false
 }

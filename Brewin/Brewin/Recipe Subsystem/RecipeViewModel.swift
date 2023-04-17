@@ -12,7 +12,7 @@ class RecipeViewModel: ObservableObject {
     init(recipes: [Recipe]) {
         self.recipes = recipes
     }
-    public static func mockRecipeViewModel() -> RecipeViewModel {
+    static func mockRecipeViewModel() -> RecipeViewModel {
         let chemexInstructionTime0: TimeInterval = 0
         let chemexRecipeInstruction0 = Instruction(id: UUID(),
                                                    message: "Put paper filter into Chemex",
@@ -32,9 +32,11 @@ class RecipeViewModel: ObservableObject {
         let chemexRecipe = Recipe(id: UUID(),
                                   name: "Chemex Recipe",
                                   method: .chemex,
-                                  instructions: [chemexRecipeInstruction0,
-                                                 chemexRecipeInstruction1,
-                                                 chemexRecipeInstruction2])
+                                  instructions: [
+                                    chemexRecipeInstruction0,
+                                    chemexRecipeInstruction1,
+                                    chemexRecipeInstruction2
+                                  ])
         let v60Recipe = Recipe(id: UUID(), name: "V60 Recipe", method: .v60, instructions: [v60RecipeInstruction])
         let recipes = [chemexRecipe, v60Recipe]
         return RecipeViewModel(recipes: recipes)
